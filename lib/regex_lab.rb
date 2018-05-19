@@ -1,5 +1,5 @@
 def starts_with_a_vowel?(word)
-  if word.match(/^[aeiouAEIOU]/)
+  if word.match(/\b[aeiouAEIOU]/)
     true
   else
     false
@@ -15,7 +15,7 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
+  if text.match(/\b[A-Z]\w./)
 end
 
 def valid_phone_number?(phone)
